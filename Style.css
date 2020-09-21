@@ -1,0 +1,9 @@
+#output{
+    text-align: right;
+    justify-content: right;
+    color: rebeccapurple;
+}
+.bordered{
+    border: 4px solid black;
+
+} 
