@@ -1,10 +1,12 @@
 
-let allButtons = document.getElementById('inputButton');
-let displayScreenText = document.getElementById('output');
-
-function buttonClickEvent(){
-    allButtons.addEventListener("click", function(){
-        displayScreenText.innerHTML(this.innerText);
-    });
+const allButtons = document.getElementById('inputButton');
+const calcDisplay = document.getElementById('output');
+function buttonClickEvent(number){
+    if((calcDisplay.innerHTML).trim()==='0'){
+        calcDisplay.innerHTML='';
 }
+let holder = calcDisplay.innerHTML;
+calcDisplay.innerHTML=holder+number;
+};    
+
 

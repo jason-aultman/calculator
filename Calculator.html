@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href = "Calculator.html" type = "text/css" rel = "stylesheet">
-        <link href = "Script.js" type = "text/javascript" rel = "javascript">
+        <link href = "Style.css" type = "text/css" rel = "stylesheet">
     </head>
     <body>
         <div>
-            <form class = "screen bordered" style = "background-color: lightblue; max-width: 80px; justify-content: center;">
-                <label id = "output">
+            <form class = "screen bordered" style = "background-color: lightblue; max-width: 160px; justify-content: center;">
+               <div class = "display bordered">
+                <label class = "display" id = "output">
                     0
                 </label>
+               </div>
+               
                 <div id = buttons>
                     <div>
-                        <button id = "input-button">1</button>
-                        <button id = "input-button">2</button>
-                        <button id = "input-button">3</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">1</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">2</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">3</button>
                     </div>
                     <div>
-                        <button id = "input-button">4</button>
-                        <button id = "input-button">5</button>
-                        <button id = "input-button">6</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">4</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">5</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">6</button>
                     </div>
                     <div>
-                        <button id = "input-button">7</button>
-                        <button id = "input-button">8</button>
-                        <button id = "input-button">9</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">7</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">8</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">9</button>
                     </div>
-                    <div style = "justify-content: center;">
-                        <button id = "input-button">0</button>
+                    <div>
+                        <button onclick="">C</button>
+                        <button type = "button" onclick ="buttonClickEvent(this.innerHTML)"id = "input-button">0</button>
                     </div>
                    
 
                 </div>
             </form>
         </div>
-        <script>
-            
-        </script>
+        <script src = "Script.js" type = "text/javascript" rel = "javascript"></script>
+
     </body>
 </html>
