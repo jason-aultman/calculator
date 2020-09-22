@@ -5,8 +5,8 @@
     </head>
     <body>
         <div>
-            <form class = "screen bordered" style = "background-color: lightblue; max-width: 160px; justify-content: center;">
-               <div class = "display bordered">
+            <form class = "screen bordered" style = "background-color: lightblue; width: 220px; justify-content: center;">
+               <div class = "display bordered" style=" justify-content:center;">
                 <label class = "display" id = "output">
                     0
                 </label>
@@ -17,20 +17,27 @@
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">1</button>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">2</button>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">3</button>
+                        <button type = "button" onclick ="buttonClickEventClickOperand(this.innerHTML)" id = "input-button">+</button>
                     </div>
                     <div>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">4</button>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">5</button>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">6</button>
+                        <button type = "button" onclick ="buttonClickEventClickOperand(this.innerHTML)" id = "input-button">-</button>
+
                     </div>
                     <div>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">7</button>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">8</button>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">9</button>
+                        <button type = "button" onclick ="buttonClickEventClickOperand(this.innerHTML)" id = "input-button">X</button>
+
                     </div>
                     <div>
-                        <button onclick="">C</button>
+                        <button onclick="" style = "background-color: darkgray;">C</button>
                         <button type = "button" onclick ="buttonClickEventClickNumber(this.innerHTML)"id = "input-button">0</button>
+                        <button type = "button" onclick ="buttonClickEventEquals()" id = "input-button" style = "background-color: orange;">=</button>
+                        <button type = "button" onclick ="buttonClickEventClickOperand(this.innerHTML)" id = "input-button">/</button>
                     </div>
                    
 
